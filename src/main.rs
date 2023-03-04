@@ -1,5 +1,6 @@
-use hello::say_hello;
+mod util;
 
 fn main() {
-    println!("{}", say_hello("world"));
+    println!("{}", util::say_hello("world"));
+    println!("{}", util::get_fibonacci(10));
 }
